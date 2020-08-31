@@ -3574,15 +3574,41 @@ namespace SpreadsheetLight
             memstream.Close();
         }
 
+        // To detect redundant calls
+        private bool _disposed = false;
+
         /// <summary>
         /// Releases all resources.
         /// </summary>
         public void Dispose()
         {
-            NullifyInternalDataStores();
+            // Dispose of unmanaged resources.
+            Dispose(true);
+            // Suppress finalization.
+            GC.SuppressFinalize(this);
 
-            xl.Dispose();
-            memstream.Dispose();
+        }
+
+        /// <summary>
+        /// Releases unmanaged and - optionally - managed resources.
+        /// </summary>
+        /// <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        protected virtual void Dispose(bool disposing)
+        {
+            if (_disposed)
+            {
+                return;
+            }
+
+            if (disposing)
+            {
+                NullifyInternalDataStores();
+
+                xl.Dispose();
+                memstream.Dispose();
+            }
+
+            _disposed = true;
         }
     }
 }
