@@ -6,5 +6,6 @@ https://spreadsheetlight.com
 Dependencies:
 - DocumentFormat.OpenXml v2.11
 - Microsoft.Office.Interop.Excel v15.0.0.0
+- Net Framework v4.5.2
 
 Please got to https://spreadsheetlight.com/developers/ for more information.
