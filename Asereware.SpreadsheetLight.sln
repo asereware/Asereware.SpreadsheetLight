@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asereware.SpreadsheetLight", "Asereware.SpreadsheetLight\Asereware.SpreadsheetLight.csproj", "{5BCAB41D-022E-4B3F-A9C9-1EF01BDAA952}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asereware.SpreadsheetLight.Tests", "Asereware.SpreadsheetLight.Tests\Asereware.SpreadsheetLight.Tests.csproj", "{240ABE1B-58AF-480E-9B97-8E0334962EF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BCAB41D-022E-4B3F-A9C9-1EF01BDAA952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BCAB41D-022E-4B3F-A9C9-1EF01BDAA952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BCAB41D-022E-4B3F-A9C9-1EF01BDAA952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BCAB41D-022E-4B3F-A9C9-1EF01BDAA952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{240ABE1B-58AF-480E-9B97-8E0334962EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{240ABE1B-58AF-480E-9B97-8E0334962EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{240ABE1B-58AF-480E-9B97-8E0334962EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{240ABE1B-58AF-480E-9B97-8E0334962EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EFE4A16A-AA79-4B21-AC51-3606E634E78D}
+	EndGlobalSection
+EndGlobal
