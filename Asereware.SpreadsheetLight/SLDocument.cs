@@ -36,7 +36,7 @@ using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 using Xdr = DocumentFormat.OpenXml.Drawing.Spreadsheet;
 using X14 = DocumentFormat.OpenXml.Office2010.Excel;
-using IOE = Microsoft.Office.Interop.Excel;
+//using IOE = Microsoft.Office.Interop.Excel;
 
 namespace SpreadsheetLight
 {
@@ -1941,7 +1941,7 @@ namespace SpreadsheetLight
                                 || child is DataValidations || child is Hyperlinks || child is PrintOptions
                                 || child is PageMargins || child is PageSetup || child is HeaderFooter
                                 || child is RowBreaks || child is ColumnBreaks || child is CustomProperties
-                                || child is CellWatches || child is IgnoredErrors || child is IOE.SmartTags)
+                                || child is CellWatches || child is IgnoredErrors )//|| child is IOE.SmartTags)
                             {
                                 oxe = child;
                                 bFound = true;
@@ -1989,7 +1989,7 @@ namespace SpreadsheetLight
                                 || child is DataValidations || child is Hyperlinks || child is PrintOptions
                                 || child is PageMargins || child is PageSetup || child is HeaderFooter
                                 || child is RowBreaks || child is ColumnBreaks || child is CustomProperties
-                                || child is CellWatches || child is IgnoredErrors || child is IOE.SmartTags
+                                || child is CellWatches || child is IgnoredErrors //|| child is IOE.SmartTags
                                 || child is DocumentFormat.OpenXml.Spreadsheet.Drawing)
                             {
                                 oxe = child;
@@ -2057,7 +2057,7 @@ namespace SpreadsheetLight
                             || child is DataValidations || child is Hyperlinks || child is PrintOptions
                             || child is PageMargins || child is PageSetup || child is HeaderFooter
                             || child is RowBreaks || child is ColumnBreaks || child is CustomProperties
-                            || child is CellWatches || child is IgnoredErrors || child is IOE.SmartTags
+                            || child is CellWatches || child is IgnoredErrors //|| child is IOE.SmartTags
                             || child is DocumentFormat.OpenXml.Spreadsheet.Drawing
                             || child is LegacyDrawing || child is LegacyDrawingHeaderFooter)
                         {
@@ -2134,7 +2134,7 @@ namespace SpreadsheetLight
                             || child is DataValidations || child is Hyperlinks || child is PrintOptions
                             || child is PageMargins || child is PageSetup || child is HeaderFooter
                             || child is RowBreaks || child is ColumnBreaks || child is CustomProperties
-                            || child is CellWatches || child is IgnoredErrors || child is IOE.SmartTags
+                            || child is CellWatches || child is IgnoredErrors //|| child is IOE.SmartTags
                             || child is DocumentFormat.OpenXml.Spreadsheet.Drawing
                             || child is LegacyDrawing || child is LegacyDrawingHeaderFooter
                             || child is Picture || child is OleObjects || child is Controls
