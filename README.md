@@ -9,6 +9,9 @@ https://spreadsheetlight.com
 
 Please got to https://spreadsheetlight.com/developers/ for more information.
 
+# Constraints
+- Office SmartTag support has been removed (but still commented in source code).
+
 # To install from Nuget go to:
 
 https://www.nuget.org/packages/asereware.spreadsheetlight/
