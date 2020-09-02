@@ -218,6 +218,7 @@
     <Compile Include="SortingFunctions.cs" />
     <Compile Include="sparkline\SLSparkline.cs" />
     <Compile Include="sparkline\SLSparklineGroup.cs" />
+    <Compile Include="Extensions\SLDocumentExtensions.cs" />
     <Compile Include="StyleFunctions.cs" />
     <Compile Include="style\SLAlignment.cs" />
     <Compile Include="style\SLBorder.cs" />
