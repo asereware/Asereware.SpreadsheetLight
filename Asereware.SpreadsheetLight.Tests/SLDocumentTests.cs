@@ -23,7 +23,7 @@ namespace SpreadsheetLight.Tests
             {
                 sd.SetCellValue("A1", "My text value");
                 sd.SetCellValue("B1", true);
-                sd.SetCellValue(1, 3, DateTime.Now.ToString("s"));
+                sd.SetCellValue(1, 3, DateTime.Now.ToString("g"));
                 sd.SaveAs(_coFileName);
             }
 

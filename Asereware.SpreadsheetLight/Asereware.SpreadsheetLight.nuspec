@@ -2,15 +2,15 @@
 <package >
   <metadata>
     <id>asereware.spreadsheetlight</id>
-    <version>3.5.0.5</version>
+    <version>3.5.0.6</version>
     <title>SpreadsheetLight with support for DocumentFormat.OpenXml v2.11.3</title>
     <authors>Vincent Tan Wai Lip, this compilation and changes by Asereware</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/asereware/Asereware.SpreadsheetLight</projectUrl>
     <icon>images\icon.png</icon>
-    <description>A new version of SpreadsheetLight from original Copyright (c) 2011 Vincent Tan Wai Lip version, but with support for DocumentFormat.OpenXml v2.11.3. https://spreadsheetlight.com/</description>
-    <releaseNotes>Removed Microsoft.Office.Interop.Excel dependency.</releaseNotes>
+    <description>A new version by Asereware of SpreadsheetLight from original Copyright (c) 2011 Vincent Tan Wai Lip version, but with support for DocumentFormat.OpenXml v2.11.3. https://spreadsheetlight.com/</description>
+    <releaseNotes>New SpreadsheetLight.Extensions with SLDocument extensions to create System.Data.DataTable and System.Data.DataView.</releaseNotes>
     <copyright>Copyright (c) 2011 Vincent Tan Wai Lip</copyright>
     <tags>Spread Sheet Light SpreadsheetLight Excel OpenXml DocumentFormat</tags>
     <dependencies>
