@@ -9,3 +9,7 @@ Dependencies:
 - Net Framework v4.5.2
 
 Please got to https://spreadsheetlight.com/developers/ for more information.
+
+To install from Nuget go to:
+
+https://www.nuget.org/packages/asereware.spreadsheetlight/
