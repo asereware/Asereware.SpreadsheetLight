@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package >
-  <metadata>
-    <id>asereware.spreadsheetlight</id>
-    <version>3.5.0.6</version>
-    <title>SpreadsheetLight with support for DocumentFormat.OpenXml v2.11.3</title>
-    <authors>Vincent Tan Wai Lip, this compilation and changes by Asereware</authors>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <license type="expression">MIT</license>
-    <projectUrl>https://github.com/asereware/Asereware.SpreadsheetLight</projectUrl>
-    <icon>images\icon.png</icon>
-    <description>A new version by Asereware of SpreadsheetLight from original Copyright (c) 2011 Vincent Tan Wai Lip version, but with support for DocumentFormat.OpenXml v2.11.3. https://spreadsheetlight.com/</description>
-    <releaseNotes>New SpreadsheetLight.Extensions with SLDocument extensions to create System.Data.DataTable and System.Data.DataView.</releaseNotes>
-    <copyright>Copyright (c) 2011 Vincent Tan Wai Lip</copyright>
-    <tags>Spread Sheet Light SpreadsheetLight Excel OpenXml DocumentFormat</tags>
-    <dependencies>
-      <group targetFramework=".NETFramework4.5.2">
-        <dependency id="DocumentFormat.OpenXml" version="2.11.3" />
-      </group>
-    </dependencies>
-    <frameworkAssemblies>
-      <frameworkAssembly assemblyName="DocumentFormat.OpenXml" targetFramework="net40" />
-      <frameworkAssembly assemblyName="System.Drawing" targetFramework="net452" />
-      <frameworkAssembly assemblyName="System.Windows.Forms" targetFramework="net452" />
-      <frameworkAssembly assemblyName="System.Xml" targetFramework="net452" />
-      <frameworkAssembly assemblyName="WindowsBase" targetFramework="net452" />
-    </frameworkAssemblies>
-  </metadata>
-  <files>
-    <file src="images\icon.png" target="images\" />
-  </files>
+	<metadata>
+		<id>asereware.spreadsheetlight</id>
+		<version>3.5.0.7</version>
+		<title>SpreadsheetLight updated to NET4.8</title>
+		<authors>Asereware, based on code from Vincent Tan Wai Lip</authors>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<license type="expression">MIT</license>
+		<projectUrl>https://github.com/asereware/Asereware.SpreadsheetLight</projectUrl>
+		<icon>images\icon.png</icon>
+		<description>A new version by Asereware of SpreadsheetLight from original Copyright (c) 2011 Vincent Tan Wai Lip version, but with support for DocumentFormat.OpenXml v2.16</description>
+		<releaseNotes>Full updated to NET Framework 4.8 and DocumentFormat.OpenXml 2.16.0.0.</releaseNotes>
+		<copyright>Copyright (c) 2011 Vincent Tan Wai Lip</copyright>
+		<tags>spread sheet light sereware spreadsheet spreadsheetlight</tags>
+		<dependencies>
+			<group targetFramework=".NETFramework4.8">
+				<dependency id="DocumentFormat.OpenXml" version="2.16.0.0" />
+			</group>
+		</dependencies>
+		<frameworkAssemblies>
+			<frameworkAssembly assemblyName="DocumentFormat.OpenXml" targetFramework="net48" />
+			<frameworkAssembly assemblyName="System.Drawing" targetFramework="net48" />
+			<frameworkAssembly assemblyName="System.Windows.Forms" targetFramework="net48" />
+			<frameworkAssembly assemblyName="System.Xml" targetFramework="net48" />
+			<frameworkAssembly assemblyName="WindowsBase" targetFramework="net48" />
+		</frameworkAssemblies>
+	</metadata>
+	<files>
+		<file src="images\icon.png" target="images\" />
+	</files>
 </package>
