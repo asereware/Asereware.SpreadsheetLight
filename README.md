@@ -1,5 +1,5 @@
 # Asereware.SpreadsheetLight
-A new version of SpreadsheetLight from  original Copyright (c) 2011 Vincent Tan Wai Lip version, but with support for DocumentFormat.OpenXml v3.11.
+A new version of SpreadsheetLight from  original Copyright (c) 2011 Vincent Tan Wai Lip version, but with support for DocumentFormat.OpenXml.
 
 https://spreadsheetlight.com
 
