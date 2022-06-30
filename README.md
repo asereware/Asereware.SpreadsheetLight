@@ -4,8 +4,8 @@ A new version of SpreadsheetLight from  original Copyright (c) 2011 Vincent Tan 
 https://spreadsheetlight.com
 
 # Dependencies:
-- DocumentFormat.OpenXml v2.11
-- Net Framework v4.5.2
+- DocumentFormat.OpenXml v2.16.0.0
+- Net Framework v4.8
 
 Please got to https://spreadsheetlight.com/developers/ for more information.
 
