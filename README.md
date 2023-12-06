@@ -1,11 +1,11 @@
 # Asereware.SpreadsheetLight
-A new version of SpreadsheetLight from  original Copyright (c) 2011 Vincent Tan Wai Lip version, but with support for DocumentFormat.OpenXml v3.11.
+A new version of SpreadsheetLight from  original Copyright (c) 2011 Vincent Tan Wai Lip version, but with support for DocumentFormat.OpenXml.
 
 https://spreadsheetlight.com
 
 # Dependencies:
-- DocumentFormat.OpenXml v2.11
-- Net Framework v4.5.2
+- DocumentFormat.OpenXml v2.19.0.0
+- Net Framework v4.8.1
 
 Please got to https://spreadsheetlight.com/developers/ for more information.
 
