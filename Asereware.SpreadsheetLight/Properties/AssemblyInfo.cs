@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("SpreadsheetLight by Asereware")]
-[assembly: AssemblyDescription("SpreadsheetLight compatible with Open XML 3.11")]
+[assembly: AssemblyDescription("SpreadsheetLight compatible with Open XML 2.5")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Asereware")]
 [assembly: AssemblyProduct("SpreadsheetLight")]
@@ -33,4 +33,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("3.5.0.0")]
-[assembly: AssemblyFileVersion("3.5.0.6")]
+[assembly: AssemblyFileVersion("3.5.0.7")]
