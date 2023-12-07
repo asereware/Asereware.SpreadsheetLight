@@ -48,7 +48,7 @@ namespace SpreadsheetLight.Tests
                 using (var sd = new SLDocument(filePath, "Hoja2"))
                 {
                     Debug.Print("Loaded.");
-
+                    sd.HideWorksheet("Hoja2", IsVeryHidden: true);
                     sd.SetCellValue("A2", $"New Value {DateTime.Now.ToString("s")}");
                     sd.SaveAs(copyFilePath);
                 }
@@ -56,12 +56,12 @@ namespace SpreadsheetLight.Tests
                 using (var sd = new SLDocument(copyFilePath))
                 {
                     if (!sd.IsWorksheetHidden("Hoja2"))
-                    {                   
-                        sd.HideWorksheet("Hoja2");                        
+                    {
+                        sd.HideWorksheet("Hoja2", IsVeryHidden: true);
+
                         sd.Save();
                     }
                 }
-
             }
 
             Assert.IsTrue(true);
