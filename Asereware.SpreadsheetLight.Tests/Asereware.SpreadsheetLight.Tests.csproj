@@ -203,6 +203,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\Files\FileMacro1.xlsm" />
+    <None Include="bin\Debug\Files\FileMacro2Protected.xlsm" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

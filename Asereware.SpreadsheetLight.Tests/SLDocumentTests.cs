@@ -37,6 +37,37 @@ namespace SpreadsheetLight.Tests
             Assert.IsTrue(true);
         }
 
+        [TestMethod]
+        public void SetCellValueOnMacroOnProtectedWorkbookTest()
+        {
+            var path = Path.Combine(Environment.CurrentDirectory, "Files");
+            var filePath = Path.Combine(path, "FileMacro2Protected.xlsm");
+            var copyFilePath = $"{path}\\FileMacroResultProtected.xlsm";
+            if (File.Exists(filePath))
+            {
+                using (var sd = new SLDocument(filePath, "Hoja2"))
+                {
+                    Debug.Print("Loaded.");
+
+                    sd.SetCellValue("A2", $"New Value {DateTime.Now.ToString("s")}");
+                    sd.SaveAs(copyFilePath);
+                }
+
+                using (var sd = new SLDocument(copyFilePath))
+                {
+                    if (!sd.IsWorksheetHidden("Hoja2"))
+                    {                   
+                        sd.HideWorksheet("Hoja2");                        
+                        sd.Save();
+                    }
+                }
+
+            }
+
+            Assert.IsTrue(true);
+        }
+
+
         [TestMethod()]
         public void SetCellValueTest()
         {
