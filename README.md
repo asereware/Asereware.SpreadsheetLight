@@ -4,7 +4,7 @@ A new version of SpreadsheetLight from  original Copyright (c) 2011 Vincent Tan 
 https://spreadsheetlight.com
 
 # Dependencies:
-- DocumentFormat.OpenXml v2.19.0.0
+- DocumentFormat.OpenXml v2.10.1 to support save Excel macro files. Before we have v2.19.0.0 of OpenXml, but does not support save macro files.
 - Net Framework v4.8.1
 
 Please got to https://spreadsheetlight.com/developers/ for more information.
