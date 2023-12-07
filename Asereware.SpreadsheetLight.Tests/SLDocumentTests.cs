@@ -67,6 +67,26 @@ namespace SpreadsheetLight.Tests
             Assert.IsTrue(true);
         }
 
+        [TestMethod]
+        public void SetCellValueOnMacroOnProtectedWorkbookTest2()
+        {
+            var path = Path.Combine(Environment.CurrentDirectory, "Files");
+            var filePath = Path.Combine(path, "RCC-Protected.xlsm");
+            var copyFilePath = $"{path}\\RCC-Copy.xlsm";
+            if (File.Exists(filePath))
+            {
+                using (var sd = new SLDocument(filePath, "Regulatory Instruments"))
+                {
+                    Debug.Print("Loaded.");
+                    sd.HideWorksheet("Hoja2", IsVeryHidden: true);
+                    sd.SetCellValue("B5", $"New Value {DateTime.Now.ToString("s")}");
+                    sd.SaveAs(copyFilePath);
+                }
+            }
+
+            Assert.IsTrue(true);
+        }
+
 
         [TestMethod()]
         public void SetCellValueTest()
