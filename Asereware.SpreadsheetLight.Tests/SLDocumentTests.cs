@@ -4,6 +4,7 @@ using SpreadsheetLight;
 using SpreadsheetLight.Extensions;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,26 @@ namespace SpreadsheetLight.Tests
     public class SLDocumentTests
     {
         private const string _coFileName = "Hello World.xlsx";
+
+        [TestMethod]
+        public void SetCellValueOnMacroTest()
+        {
+            var path = Path.Combine(Environment.CurrentDirectory, "Files");
+            var filePath = Path.Combine(path, "FileMacro1.xlsm");
+            if (File.Exists(filePath))
+            {
+                using (var sd = new SLDocument(filePath, "Hoja1"))
+                {
+                    Debug.Print("Loaded.");
+
+                    sd.SetCellValue("A2", $"New Value {DateTime.Now.ToString("s")}");
+                    sd.SaveAs($"{path}\\FileMacroResult.xlsm");
+
+                }
+            }
+
+            Assert.IsTrue(true);
+        }
 
         [TestMethod()]
         public void SetCellValueTest()
@@ -78,7 +99,7 @@ namespace SpreadsheetLight.Tests
             System.Data.DataTable dt = null;
             using (var sd = new SLDocument(fileName))
             {
-                dt = sd.CreateDataTable(hasHeaders);                
+                dt = sd.CreateDataTable(hasHeaders);
             }
 
             Assert.IsTrue(dt.Columns.Count == 3);
