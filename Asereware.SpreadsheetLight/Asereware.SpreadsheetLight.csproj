@@ -423,6 +423,6 @@
     <PostBuildEvent>copy /Y $(TargetPath) "C:\Teg\Trunk\$(OutDir)"
 copy /Y $(TargetPath) "C:\Teg\Trunk\s\mfenix\Libs\MOMF"
 copy /Y $(TargetPath) "C:\Teg\Trunk\s\mfenix\Metis.WebUI\bin"
-copy /Y $(TargetPath)  "C:\Teg\Trunk\s\Metis.Applications.ABEFiles\Metis.Applications.ABEFiles\$(OutDir)"</PostBuildEvent>
+copy /Y $(TargetPath) "C:\Teg\Trunk\s\Metis.Applications.ABEFiles\Metis.Applications.ABEFiles\$(OutDir)"</PostBuildEvent>
   </PropertyGroup>
 </Project>
