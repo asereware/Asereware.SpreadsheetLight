@@ -419,4 +419,9 @@
     <Content Include="Readme Nuget.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetPath) "C:\Teg\Trunk\$(OutDir)"
+copy $(TargetPath) "C:\Teg\Trunk\s\mfenix\Libs\MOMF"
+copy $(TargetPath) "C:\Teg\Trunk\s\mfenix\Metis.WebUI\bin"</PostBuildEvent>
+  </PropertyGroup>
 </Project>
