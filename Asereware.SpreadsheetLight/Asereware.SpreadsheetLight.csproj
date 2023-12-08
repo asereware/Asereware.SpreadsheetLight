@@ -420,8 +420,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy $(TargetPath) "C:\Teg\Trunk\$(OutDir)"
-copy $(TargetPath) "C:\Teg\Trunk\s\mfenix\Libs\MOMF"
-copy $(TargetPath) "C:\Teg\Trunk\s\mfenix\Metis.WebUI\bin"</PostBuildEvent>
+    <PostBuildEvent>copy /Y $(TargetPath) "C:\Teg\Trunk\$(OutDir)"
+copy /Y $(TargetPath) "C:\Teg\Trunk\s\mfenix\Libs\MOMF"
+copy /Y $(TargetPath) "C:\Teg\Trunk\s\mfenix\Metis.WebUI\bin"
+copy /Y $(TargetPath)  "C:\Teg\Trunk\s\Metis.Applications.ABEFiles\Metis.Applications.ABEFiles\$(OutDir)"</PostBuildEvent>
   </PropertyGroup>
 </Project>
