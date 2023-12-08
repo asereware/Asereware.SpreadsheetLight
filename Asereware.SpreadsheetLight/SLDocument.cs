@@ -746,7 +746,7 @@ namespace SpreadsheetLight
             WorksheetPart wsp = (WorksheetPart)wbp.GetPartById(gsSelectedWorksheetRelationshipID);
 
             slws = new SLWorksheet(SimpleTheme.listThemeColors, SimpleTheme.listIndexedColors, SimpleTheme.ThemeColumnWidth, SimpleTheme.ThemeColumnWidthInEMU, SimpleTheme.ThemeMaxDigitWidth, SimpleTheme.listColumnStepSize, SimpleTheme.ThemeRowHeight);
-            
+
             int index = 0;
             SLColumnProperties cp;
             Column col;
@@ -1941,7 +1941,7 @@ namespace SpreadsheetLight
                                 || child is DataValidations || child is Hyperlinks || child is PrintOptions
                                 || child is PageMargins || child is PageSetup || child is HeaderFooter
                                 || child is RowBreaks || child is ColumnBreaks || child is CustomProperties
-                                || child is CellWatches || child is IgnoredErrors )//|| child is IOE.SmartTags)
+                                || child is CellWatches || child is IgnoredErrors)//|| child is IOE.SmartTags)
                             {
                                 oxe = child;
                                 bFound = true;
@@ -3197,7 +3197,7 @@ namespace SpreadsheetLight
                 }
                 else
                 {
-                    if (wsp.Worksheet.SheetViews != null)
+                    if (wsp.Worksheet != null && wsp.Worksheet.SheetViews != null)
                     {
                         foreach (SheetView sv in wsp.Worksheet.SheetViews)
                         {
@@ -3334,7 +3334,7 @@ namespace SpreadsheetLight
 
             WriteWorkbook();
             WriteDocumentProperties();
-            
+
             xl.Close();
 
             // This will solve LibreOffice not opening documents correctly if document metadata is set.

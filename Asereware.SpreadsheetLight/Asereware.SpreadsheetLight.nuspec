@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>asereware.spreadsheetlight</id>
-    <version>3.5.0.10</version>
+    <version>3.5.0.12</version>
     <title>SpreadsheetLight with support for DocumentFormat.OpenXml v2.10.1</title>
     <authors>Vincent Tan Wai Lip, this compilation and changes by Asereware</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

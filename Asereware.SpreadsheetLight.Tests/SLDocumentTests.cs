@@ -78,7 +78,7 @@ namespace SpreadsheetLight.Tests
                 using (var sd = new SLDocument(filePath, "Regulatory Instruments"))
                 {
                     Debug.Print("Loaded.");
-                    sd.HideWorksheet("Hoja2", IsVeryHidden: true);
+                    sd.HideWorksheet("Hoja2", IsVeryHidden: true);                    
                     sd.SetCellValue("B5", $"New Value {DateTime.Now.ToString("s")}");
                     sd.SaveAs(copyFilePath);
                 }
