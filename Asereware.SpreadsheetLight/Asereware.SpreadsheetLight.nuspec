@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>asereware.spreadsheetlight</id>
-    <version>3.5.0.12</version>
+    <version>3.5.0.14</version>
     <title>SpreadsheetLight with support for DocumentFormat.OpenXml v2.10.1</title>
     <authors>Vincent Tan Wai Lip, this compilation and changes by Asereware</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/asereware/Asereware.SpreadsheetLight</projectUrl>
     <icon>images\icon.png</icon>
     <description>A new version by Asereware of SpreadsheetLight from original Copyright (c) 2011 Vincent Tan Wai Lip version, but with support for DocumentFormat.OpenXml v2.10.1 and Net Framework 4.8.1. https://spreadsheetlight.com/</description>
-    <releaseNotes>New SpreadsheetLight.Extensions with SLDocument extensions to create System.Data.DataTable and System.Data.DataView. This version supports to save the modified Excel macro files. The upper OpenXml versions fail on save macro (xlsm) files using this code version of SL.</releaseNotes>
+    <releaseNotes>New SpreadsheetLight.Extensions with SLDocument extensions to create System.Data.DataTable and System.Data.DataView. This version supports to save the modified Excel macro files. The upper OpenXml versions fail on save macro (xlsm) files using this code version of SL. Updated some System dependencies.</releaseNotes>
     <copyright>Copyright (c) 2011 Vincent Tan Wai Lip</copyright>
     <tags>Spread Sheet Light SpreadsheetLight Excel OpenXml DocumentFormat</tags>
     <dependencies>
