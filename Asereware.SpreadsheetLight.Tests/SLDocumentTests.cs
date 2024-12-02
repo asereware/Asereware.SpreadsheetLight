@@ -1,14 +1,8 @@
-﻿using DocumentFormat.OpenXml.Drawing.Charts;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SpreadsheetLight;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SpreadsheetLight.Extensions;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SpreadsheetLight.Tests
 {
