@@ -58,7 +58,7 @@ namespace SpreadsheetLight.Tests
                 }
             }
 
-            Assert.IsTrue(true);
+            
         }
 
         [TestMethod]
