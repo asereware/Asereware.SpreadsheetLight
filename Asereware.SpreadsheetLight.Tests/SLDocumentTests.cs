@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SpreadsheetLight.Extensions;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 
@@ -35,8 +36,8 @@ namespace SpreadsheetLight.Tests
         public void SetCellValueOnMacroOnProtectedWorkbookTest()
         {
             var path = Path.Combine(Environment.CurrentDirectory, "Files");
-            var filePath = Path.Combine(path, "FileMacro2Protected.xlsm");
-            var copyFilePath = $"{path}\\FileMacroResultProtected.xlsm";
+            var filePath = Path.Combine(path, "1695985_RCC - 2024 v3.3 - Apr 2024 Ergo.xlsm");
+            var copyFilePath = $"{path}\\Updated-1695985_RCC - 2024 v3.3 - Apr 2024 Ergo.xlsm";
             if (File.Exists(filePath))
             {
                 using (var sd = new SLDocument(filePath, "Hoja2"))
@@ -57,8 +58,55 @@ namespace SpreadsheetLight.Tests
                     }
                 }
             }
+        }
 
-            
+        [TestMethod]
+        public void LocalFilexlsmTest()
+        {
+            var fileName = "1609721_RCC - 2024 v3.2 - Feb 2024 Ergo (PROD).xlsm";
+            var indexPage = "Index";
+            var regulatoryPage = "Regulatory Instruments";
+            var path = Path.Combine(Environment.CurrentDirectory, "Files");
+            var filePath = Path.Combine(path, fileName);
+            var copyFilePath = $"{path}\\Updated-{fileName}";
+
+            List<string> files = new List<string>() { "uno", "dos" };
+
+            if (File.Exists(filePath))
+            {
+                using (var doc = new SLDocument(filePath))
+                {
+
+                    if (doc.SelectWorksheet(regulatoryPage))
+                    {
+                        CleanData(doc);
+                        int row = 5;
+                        foreach (var instr in files)
+                        {
+                            doc.SetCellValue(row, 2, instr);
+                            doc.SetCellValue(row, 3, instr);
+                            doc.SetCellValue(row, 4, instr);
+                            doc.SetCellValue(row, 5, instr);
+                            row++;
+                        }
+
+                        doc.SelectWorksheet(indexPage);
+                        doc.HideWorksheet(regulatoryPage);
+                        doc.SaveAs(filePath);
+                    }
+                }
+            }
+        }
+
+        private void CleanData(SLDocument sl)
+        {
+            for (int i = 5; i <= 104; ++i)
+            {
+                for (int j = 2; j <= 5; ++j)
+                {
+                    sl.SetCellValue(i, j, String.Empty);
+                }
+            }
         }
 
         [TestMethod]
