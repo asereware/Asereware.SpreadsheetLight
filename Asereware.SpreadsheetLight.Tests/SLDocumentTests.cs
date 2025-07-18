@@ -92,7 +92,9 @@ namespace SpreadsheetLight.Tests
 
                         doc.SelectWorksheet(indexPage);
                         doc.HideWorksheet(regulatoryPage);
+                        Debug.Print($"Saving file {filePath}...");
                         doc.SaveAs(filePath);
+                        Debug.Print("Saved OK.");
                     }
                 }
             }
