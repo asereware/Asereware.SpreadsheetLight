@@ -52,13 +52,11 @@ namespace SpreadsheetLight.Tests
                     if (!sd.IsWorksheetHidden("Hoja2"))
                     {
                         sd.HideWorksheet("Hoja2", IsVeryHidden: true);
-
+                        sd.SetCellValue("A2", $"New Value {DateTime.Now.ToString("s")}");
                         sd.Save();
                     }
                 }
             }
-
-            
         }
 
         [TestMethod]
